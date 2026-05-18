@@ -50,7 +50,7 @@
                         </label>
                         <input id="email" name="email" type="email" 
                             class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-white rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700"
-                            placeholder="admin@campuseval.test"
+                            placeholder="exemple@gmail.com"
                             value="{{ old('email') }}"
                             required autofocus autocomplete="email">
                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
@@ -63,7 +63,7 @@
                         </label>
                         <input id="password" name="password" type="password"
                             class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-white rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700"
-                            placeholder="••••••••"
+                            placeholder=""
                             required autocomplete="current-password">
                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
                     </div>
@@ -95,7 +95,7 @@
 
             <!-- Info -->
             <div class="text-center text-xs text-gray-500 dark:text-gray-400 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                <strong>Admin :</strong> admin@campuseval.test / CampusEval!2026
+                <strong>Admin :</strong> amsa@gmail.com / amsa1234@#
             </div>
         </div>
     </div>

@@ -32,22 +32,22 @@ class DatabaseSeeder extends Seeder
 
         // ===== Super admin =====
         $superAdmin = User::create([
-            'first_name' => 'Campus',
-            'last_name' => 'Admin',
-            'name' => 'CampusEval Super Admin',
-            'email' => 'admin@campuseval.test',
-            'matricule' => 'PER.CAMPUS.9999.CDI',
-            'password' => Hash::make('CampusEval!2026'),
+            'first_name' => 'Amang',
+            'last_name' => 'Said',
+            'name' => 'AMSA',
+            'email' => 'amsa@gmail.com',
+            'matricule' => 'GL.CMR.2025.CDI',
+            'password' => Hash::make('amsa1234@#'),
             'role' => 'super_admin',
             'is_active' => true,
             'email_verified_at' => now(),
         ]);
 
         $this->command->info('Super admin créé :');
-        $this->command->info('  Email    : admin@campuseval.test');
-        $this->command->info('  Mot de passe : CampusEval!2026');
-        $this->command->info('  Rôle     : super_admin');
-        $this->command->info('  Matricule: PER.CAMPUS.9999.CDI');
+        $this->command->info('  Email  : amsa@gmail.com');
+        $this->command->info('  Mot de passe : amsa1234@#');
+        $this->command->info('  Rôle   : super_admin');
+        $this->command->info('  Matricule: GL.CMR.2025.CDI');
 
         // ===== Teachers + teacher_class pivot =====
         $teachers = \App\Models\Teacher::factory()->count(5)->state(fn () => [

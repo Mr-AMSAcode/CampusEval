@@ -87,7 +87,7 @@
                         <select id="level" name="level"
                             class="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 placeholder-gray-400 dark:placeholder-gray-500 text-gray-900 dark:text-white rounded-md focus:ring-emerald-500 focus:border-emerald-500 dark:bg-slate-700"
                             required>
-                            <option value="">-- Sélectionner un niveau --</option>
+                            <option value=""> Sélectionner un niveau </option>
                             <option value="Licence 1" {{ old('level') === 'Licence 1' ? 'selected' : '' }}>Licence 1</option>
                             <option value="Licence 2" {{ old('level') === 'Licence 2' ? 'selected' : '' }}>Licence 2</option>
                             <option value="Licence 3" {{ old('level') === 'Licence 3' ? 'selected' : '' }}>Licence 3</option>

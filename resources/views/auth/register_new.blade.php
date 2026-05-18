@@ -62,7 +62,7 @@
                     <!-- Matricule -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Matricule <span class="text-xs text-gray-500">(GL.CMRY22.23.K ou SR.CMRY21.22.A)</span></label>
-                        <input name="matricule" type="text" placeholder="GL.CMRY22.23.K"
+                        <input name="matricule" type="text" placeholder="exemple: GL.CMRY22.23.K"
                             class="mt-1 w-full px-3 py-2 border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-white rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700"
                             value="{{ old('matricule') }}" required>
                         <x-input-error :messages="$errors->get('matricule')" class="mt-1" />
