@@ -91,9 +91,6 @@
                             <option value="Licence 1" {{ old('level') === 'Licence 1' ? 'selected' : '' }}>Licence 1</option>
                             <option value="Licence 2" {{ old('level') === 'Licence 2' ? 'selected' : '' }}>Licence 2</option>
                             <option value="Licence 3" {{ old('level') === 'Licence 3' ? 'selected' : '' }}>Licence 3</option>
-                            <option value="Master 1" {{ old('level') === 'Master 1' ? 'selected' : '' }}>Master 1</option>
-                            <option value="Master 2" {{ old('level') === 'Master 2' ? 'selected' : '' }}>Master 2</option>
-                            <option value="Doctorat" {{ old('level') === 'Doctorat' ? 'selected' : '' }}>Doctorat</option>
                         </select>
                     </div>
 
@@ -105,7 +102,7 @@
                         <select id="class_id" name="class_id"
                             class="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 placeholder-gray-400 dark:placeholder-gray-500 text-gray-900 dark:text-white rounded-md focus:ring-emerald-500 focus:border-emerald-500 dark:bg-slate-700"
                             required>
-                            <option value="">-- Sélectionner une classe --</option>
+                            <option value=""> Sélectionner une classe </option>
                             @foreach(\App\Models\ClassModel::with('department')->get() as $class)
                                 <option value="{{ $class->id }}" {{ old('class_id') == $class->id ? 'selected' : '' }}>
                                     {{ $class->name }} ({{ $class->department->name ?? 'N/A' }})
